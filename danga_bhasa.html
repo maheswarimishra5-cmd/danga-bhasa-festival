@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣ — ହାର୍ଦ୍ଦିକ ଶୁଭେଚ୍ଛା | Made by Anubrata</title>
+  <meta name="description" content="ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, ଡଙ୍ଗା ଭସା ଏବଂ ବୋଇତ ବନ୍ଦାଣର ହାର୍ଦ୍ଦିକ ଶୁଭେଚ୍ଛା ଓ ଅଭିନନ୍ଦନ।" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Sans+Oriya:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-deep: #050e23;
+      --bg-indigo: #0d1f47;
+      --bg-dusk: #2e1942;
+      --gold-bright: #ffd166;
+      --gold-warm: #f59e0b;
+      --saffron: #ff7b29;
+      --crimson: #c81e3a;
+      --lotus-pink: #fb7185;
+      --cream: #fff7e6;
+      --text-soft: #e2e8f0;
+      --whatsapp: #25d366;
+      --whatsapp-dark: #128c7e;
+      --glass-bg: rgba(11, 24, 54, 0.72);
+      --glass-border: rgba(255, 209, 102, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans Oriya', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #040b1c 0%, #0b1c3f 30%, #24193d 58%, #4d223b 78%, #0a203e 100%);
+      color: var(--cream);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      line-height: 1.75;
+    }
+
+    /* Animated Full-Screen River & Sky Canvas */
+    #riverCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: auto;
+    }
+
+    /* Subtle festive ambient overlay */
+    .ambient-glow {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 16%, rgba(255, 214, 120, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 20% 70%, rgba(255, 123, 41, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 80% 75%, rgba(251, 113, 133, 0.1) 0%, transparent 45%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Main Content Container */
+    .page-wrapper {
+      position: relative;
+      z-index: 2;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 14px 16px 64px;
+      pointer-events: none;
+    }
+
+    .page-wrapper > * {
+      pointer-events: auto;
+    }
+
+    /* Top "Made by Anubrata" Ribbon */
+    .top-creator-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .creator-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(20, 36, 75, 0.9), rgba(62, 23, 51, 0.88));
+      border: 1.5px solid rgba(255, 209, 102, 0.55);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45), 0 0 18px rgba(255, 209, 102, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      color: var(--gold-bright);
+      animation: softPulse 3.5s ease-in-out infinite;
+    }
+
+    .creator-pill .latin-brand {
+      font-family: 'Cinzel', Georgia, serif;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #fff3c4;
+    }
+
+    @keyframes softPulse {
+      0%, 100% { box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45), 0 0 14px rgba(255, 209, 102, 0.22); }
+      50% { box-shadow: 0 6px 28px rgba(0, 0, 0, 0.5), 0 0 24px rgba(255, 180, 70, 0.45); }
+    }
+
+    /* Glassmorphic Festival Cards */
+    .card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 24px 20px;
+      margin-bottom: 22px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 16px 42px rgba(2, 8, 24, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-bright), var(--saffron), var(--crimson), var(--gold-bright), transparent);
+      opacity: 0.85;
+    }
+
+    /* Hero Greeting Section */
+    .hero-card {
+      text-align: center;
+      padding-top: 26px;
+      padding-bottom: 26px;
+      background: linear-gradient(180deg, rgba(12, 27, 62, 0.82) 0%, rgba(28, 22, 56, 0.8) 100%);
+    }
+
+    .festival-badge {
+      display: inline-block;
+      padding: 5px 16px;
+      border-radius: 999px;
+      background: rgba(245, 158, 11, 0.16);
+      border: 1px solid rgba(255, 209, 102, 0.4);
+      color: var(--gold-bright);
+      font-size: 0.86rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .hero-title {
+      font-size: clamp(1.65rem, 5vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.35;
+      background: linear-gradient(180deg, #fff9e6 0%, #ffd166 55%, #ff9234 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 3px 12px rgba(255, 165, 0, 0.25));
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-title.pop {
+      animation: titlePop 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    @keyframes titlePop {
+      0% { transform: scale(0.92); opacity: 0.6; }
+      60% { transform: scale(1.04); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2.8vw, 1.2rem);
+      color: #fde68a;
+      font-weight: 600;
+      max-width: 720px;
+      margin: 0 auto 18px;
+    }
+
+    .name-highlight {
+      display: inline-block;
+      padding: 2px 12px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(255, 123, 41, 0.3), rgba(200, 30, 58, 0.3));
+      border: 1px solid rgba(255, 209, 102, 0.55);
+      color: #fff;
+      -webkit-text-fill-color: #fff;
+      text-shadow: 0 2px 10px rgba(255, 165, 0, 0.6);
+    }
+
+    /* Boita Illustration Stage */
+    .boita-stage {
+      position: relative;
+      max-width: 560px;
+      margin: 8px auto 18px;
+      padding: 12px 8px 4px;
+      border-radius: 20px;
+      background: radial-gradient(ellipse at 50% 60%, rgba(255, 180, 60, 0.14) 0%, rgba(6, 18, 44, 0.35) 75%);
+      border: 1px solid rgba(255, 209, 102, 0.2);
+    }
+
+    .boita-svg {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      animation: boitaFloat 4.6s ease-in-out infinite;
+      transform-origin: center bottom;
+      filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.55));
+    }
+
+    @keyframes boitaFloat {
+      0%, 100% { transform: translateY(0px) rotate(-1.1deg); }
+      50% { transform: translateY(-9px) rotate(1.1deg); }
+    }
+
+    .flame-flicker {
+      animation: flicker 1.1s ease-in-out infinite alternate;
+      transform-origin: center bottom;
+    }
+
+    @keyframes flicker {
+      0% { transform: scaleY(1) scaleX(1); opacity: 0.92; }
+      100% { transform: scaleY(1.16) scaleX(0.92); opacity: 1; }
+    }
+
+    .wave-slide {
+      animation: waveSlide 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes waveSlide {
+      0% { transform: translateX(-8px); }
+      100% { transform: translateX(8px); }
+    }
+
+    .boita-banner-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: -6px;
+      margin-bottom: 10px;
+      padding: 8px 26px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #9f1239 0%, #c81e3a 45%, #d97706 100%);
+      border: 2px solid var(--gold-bright);
+      box-shadow: 0 6px 20px rgba(200, 30, 58, 0.45), 0 0 22px rgba(255, 209, 102, 0.35);
+      font-size: clamp(1.25rem, 3.6vw, 1.65rem);
+      font-weight: 800;
+      color: #fffbeb;
+      letter-spacing: 1px;
+    }
+
+    /* Interactive Float Danga Action Row */
+    .river-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.98rem;
+      border-radius: 14px;
+      padding: 13px 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform 0.16s ease, box-shadow 0.2s ease, filter 0.2s ease;
+      min-height: 48px;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+    }
+
+    .btn-danga {
+      background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+      color: #fff;
+      border: 1.5px solid #fde68a;
+      box-shadow: 0 8px 22px rgba(234, 88, 12, 0.42);
+    }
+
+    .btn-danga:hover {
+      filter: brightness(1.08);
+      transform: translateY(-2px);
+    }
+
+    .danga-counter-pill {
+      padding: 10px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 209, 102, 0.35);
+      color: #fef3c7;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    /* Personalization Name Box */
+    .personalize-card {
+      background: linear-gradient(135deg, rgba(16, 33, 71, 0.85), rgba(49, 21, 59, 0.84));
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: clamp(1.22rem, 3.5vw, 1.58rem);
+      font-weight: 800;
+      color: var(--gold-bright);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: #e2e8f0;
+      font-size: 0.96rem;
+      margin-bottom: 16px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 620px;
+      margin: 0 auto 14px;
+    }
+
+    .name-input {
+      flex: 1 1 240px;
+      min-height: 52px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 2px solid rgba(255, 209, 102, 0.45);
+      background: rgba(5, 14, 35, 0.78);
+      color: #fff;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 600;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .name-input::placeholder {
+      color: rgba(226, 232, 240, 0.62);
+      font-weight: 400;
+    }
+
+    .name-input:focus {
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 0 4px rgba(255, 209, 102, 0.2);
+    }
+
+    .btn-apply {
+      flex: 0 0 auto;
+      background: linear-gradient(135deg, #ffd166 0%, #f59e0b 100%);
+      color: #2b1300;
+      box-shadow: 0 6px 18px rgba(245, 158, 11, 0.38);
+    }
+
+    .quick-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .chip {
+      border: 1px solid rgba(255, 209, 102, 0.38);
+      background: rgba(255, 209, 102, 0.1);
+      color: #fde68a;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 36px;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .chip:hover {
+      background: rgba(255, 209, 102, 0.24);
+      transform: translateY(-1px);
+    }
+
+    /* Share via WhatsApp Box */
+    .share-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+      border: 1.5px solid rgba(187, 247, 208, 0.6);
+      font-size: 1.02rem;
+      padding: 14px 24px;
+    }
+
+    .btn-whatsapp:hover {
+      filter: brightness(1.07);
+      transform: translateY(-2px);
+    }
+
+    .btn-copy {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fef3c7;
+      border: 1.5px solid rgba(255, 209, 102, 0.42);
+    }
+
+    .share-link-preview {
+      margin: 14px auto 0;
+      max-width: 640px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(4, 11, 28, 0.65);
+      border: 1px dashed rgba(255, 209, 102, 0.38);
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      word-break: break-all;
+      text-align: center;
+    }
+
+    /* Aa Ka Ma Bai Sacred Verse Card */
+    .mantra-card {
+      text-align: center;
+      background: linear-gradient(135deg, rgba(102, 20, 48, 0.72), rgba(28, 22, 62, 0.82));
+      border-color: rgba(251, 191, 36, 0.45);
+    }
+
+    .mantra-verse {
+      font-size: clamp(1.18rem, 3.8vw, 1.6rem);
+      font-weight: 800;
+      color: #fff3c4;
+      line-height: 1.8;
+      text-shadow: 0 2px 12px rgba(245, 158, 11, 0.35);
+      margin: 8px 0;
+    }
+
+    .mantra-meaning {
+      font-size: 0.95rem;
+      color: #fde68a;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+
+    /* Family & Friends Wishes Section */
+    .wish-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .wish-tab {
+      border: 1px solid rgba(255, 209, 102, 0.32);
+      background: rgba(255, 255, 255, 0.06);
+      color: #e2e8f0;
+      border-radius: 12px;
+      padding: 9px 16px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      min-height: 44px;
+      transition: all 0.2s ease;
+    }
+
+    .wish-tab.active {
+      background: linear-gradient(135deg, #f59e0b, #c81e3a);
+      color: #fff;
+      border-color: var(--gold-bright);
+      box-shadow: 0 4px 14px rgba(200, 30, 58, 0.4);
+    }
+
+    .wish-showcase {
+      background: rgba(4, 12, 32, 0.62);
+      border: 1px solid rgba(255, 209, 102, 0.28);
+      border-radius: 18px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .wish-showcase-title {
+      color: var(--gold-bright);
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .wish-showcase-text {
+      font-size: 1.04rem;
+      color: #fff8eb;
+      line-height: 1.85;
+    }
+
+    .wishes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    .mini-wish-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 209, 102, 0.22);
+      border-radius: 16px;
+      padding: 16px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .mini-wish-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255, 209, 102, 0.52);
+    }
+
+    .mini-wish-card h3 {
+      font-size: 1.04rem;
+      color: var(--gold-bright);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mini-wish-card p {
+      font-size: 0.93rem;
+      color: #e2e8f0;
+    }
+
+    /* History Section */
+    .history-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .history-item {
+      background: linear-gradient(160deg, rgba(15, 34, 72, 0.72), rgba(35, 19, 52, 0.72));
+      border: 1px solid rgba(255, 209, 102, 0.26);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .history-step {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.14);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .history-item h3 {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: #fff3c4;
+      margin-bottom: 6px;
+    }
+
+    .history-item p {
+      font-size: 0.94rem;
+      color: #e2e8f0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 18px 12px 8px;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+
+    .footer strong {
+      color: var(--gold-bright);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(90px);
+      background: rgba(10, 24, 54, 0.95);
+      color: #fff7e6;
+      border: 1.5px solid var(--gold-bright);
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      z-index: 50;
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      pointer-events: none;
+      text-align: center;
+      max-width: 90vw;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 540px) {
+      .card {
+        padding: 20px 15px;
+        border-radius: 20px;
+      }
+      .btn-apply {
+        width: 100%;
+      }
+      .btn-whatsapp, .btn-copy {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Animated Sacred River, Moonlight, Stars & Floating Danga Canvas -->
+  <canvas id="riverCanvas" aria-label="ଆନିମେଟେଡ୍ ନଦୀ ଏବଂ ଭାସୁଥିବା ଡଙ୍ଗା"></canvas>
+  <div class="ambient-glow"></div>
+
+  <main class="page-wrapper">
+    <!-- Top Attribution Banner -->
+    <header class="top-creator-bar">
+      <div class="creator-pill">
+        <span>🪷</span>
+        <span class="latin-brand">Made by Anubrata</span>
+        <span>•</span>
+        <span>ଶୁଭ ଡଙ୍ଗା ଭସା</span>
+      </div>
+    </header>
+
+    <!-- Hero Greeting + Traditional Odisha Boita Boat Illustration -->
+    <section class="card hero-card">
+      <div class="festival-badge">🌕 ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା ଓ ଉତ୍କଳୀୟ ପରମ୍ପରା</div>
+
+      <h1 id="heroTitle" class="hero-title">
+        ଶୁଭ ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣ!
+      </h1>
+      <p id="heroSubtitle" class="hero-subtitle">
+        ଆପଣଙ୍କୁ ଏବଂ ଆପଣଙ୍କ ସମଗ୍ର ପରିବାରକୁ ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣର ହାର୍ଦ୍ଦିକ ଅଭିନନ୍ଦନ ଓ ଅଶେଷ ଶୁଭେଚ୍ଛା!
+      </p>
+
+      <!-- Traditional Odisha Boita Illustration -->
+      <div class="boita-stage">
+        <svg class="boita-svg" viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ପାରମ୍ପରିକ ଓଡ଼ିଆ ବୋଇତ ବନ୍ଦାଣ ଚିତ୍ର">
+          <defs>
+            <radialGradient id="moonAura" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#fff8d6" stop-opacity="0.95" />
+              <stop offset="45%" stop-color="#ffd166" stop-opacity="0.45" />
+              <stop offset="100%" stop-color="#ffd166" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="sailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff3c4" />
+              <stop offset="45%" stop-color="#fbbf24" />
+              <stop offset="100%" stop-color="#ea580c" />
+            </linearGradient>
+            <linearGradient id="crimsonSail" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f43f5e" />
+              <stop offset="60%" stop-color="#be123c" />
+              <stop offset="100%" stop-color="#881337" />
+            </linearGradient>
+            <linearGradient id="hullWood" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#9a3412" />
+              <stop offset="50%" stop-color="#7c2d12" />
+              <stop offset="100%" stop-color="#431407" />
+            </linearGradient>
+            <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#fde68a" />
+              <stop offset="50%" stop-color="#f59e0b" />
+              <stop offset="100%" stop-color="#fef08a" />
+            </linearGradient>
+            <linearGradient id="waterGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25" />
+              <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.55" />
+              <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.25" />
+            </linearGradient>
+          </defs>
+
+          <!-- Full Moon Halo behind Mast -->
+          <circle cx="260" cy="110" r="88" fill="url(#moonAura)" />
+          <circle cx="260" cy="110" r="36" fill="#fffbeb" opacity="0.92" />
+
+          <!-- Rigging Ropes -->
+          <line x1="258" y1="36" x2="105" y2="215" stroke="#fde68a" stroke-width="1.8" opacity="0.8" />
+          <line x1="258" y1="36" x2="418" y2="195" stroke="#fde68a" stroke-width="1.8" opacity="0.8" />
+          <line x1="185" y1="78" x2="145" y2="210" stroke="#fcd34d" stroke-width="1.4" opacity="0.7" />
+
+          <!-- Main Wooden Mast & Yardarms -->
+          <rect x="254" y="28" width="8" height="200" rx="4" fill="#78350f" stroke="#fbbf24" stroke-width="1.2" />
+          <line x1="168" y1="72" x2="352" y2="80" stroke="#92400e" stroke-width="6" stroke-linecap="round" />
+          <line x1="168" y1="72" x2="352" y2="80" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" />
+
+          <!-- Temple Flag (Pataka) on top of Mast -->
+          <path d="M261 28 L314 38 L294 47 L316 54 L261 58 Z" fill="#dc2626" stroke="#fde68a" stroke-width="1.5" />
+          <circle cx="277" cy="43" r="4" fill="#fde68a" />
+
+          <!-- Secondary Rear Sail -->
+          <path d="M180 88 Q145 142 162 198 Q208 190 246 196 Q230 140 245 84 Z" fill="url(#crimsonSail)" stroke="#fde68a" stroke-width="2" />
+          <!-- Pasapalli diamond motif on Rear Sail -->
+          <polygon points="200,122 214,142 200,162 186,142" fill="none" stroke="#fde68a" stroke-width="2" />
+          <polygon points="200,132 207,142 200,152 193,142" fill="#fde68a" />
+
+          <!-- Primary Front Sail -->
+          <path d="M262 76 Q330 78 358 84 Q388 142 356 198 Q304 190 262 198 Q282 142 262 76 Z" fill="url(#sailGrad)" stroke="#9a3412" stroke-width="2" />
+          <!-- Traditional Konark-inspired Chakra Motif on Main Sail -->
+          <circle cx="316" cy="140" r="24" fill="none" stroke="#9f1239" stroke-width="2.5" />
+          <circle cx="316" cy="140" r="16" fill="none" stroke="#7c2d12" stroke-width="1.5" />
+          <circle cx="316" cy="140" r="5" fill="#9f1239" />
+          <line x1="316" y1="116" x2="316" y2="164" stroke="#9f1239" stroke-width="1.8" />
+          <line x1="292" y1="140" x2="340" y2="140" stroke="#9f1239" stroke-width="1.8" />
+          <line x1="299" y1="123" x2="333" y2="157" stroke="#9f1239" stroke-width="1.8" />
+          <line x1="333" y1="123" x2="299" y2="157" stroke="#9f1239" stroke-width="1.8" />
+          <!-- Sail Crimson Border -->
+          <path d="M266 184 Q310 179 354 184" fill="none" stroke="#be123c" stroke-width="5" />
+
+          <!-- Ornate Boita Wooden Hull -->
+          <path d="M84 194 Q102 272 190 278 L344 278 Q426 270 448 184 Q428 198 402 205 L118 205 Q98 200 84 194 Z"
+                fill="url(#hullWood)" stroke="url(#goldTrim)" stroke-width="3.5" />
+
+          <!-- Carved Stern (Left) & Makara Prow (Right) -->
+          <path d="M86 196 Q64 176 74 152 Q88 148 92 166 Q90 180 112 196 Z" fill="#7c2d12" stroke="#fbbf24" stroke-width="2.5" />
+          <circle cx="81" cy="162" r="4" fill="#fde68a" />
+
+          <path d="M408 205 Q444 192 454 154 Q468 136 452 126 Q436 126 434 146 Q432 168 412 186 Z"
+                fill="#9a3412" stroke="#fde68a" stroke-width="2.5" />
+          <!-- Prow Eye & Crown -->
+          <circle cx="448" cy="144" r="3.5" fill="#fffbeb" />
+          <circle cx="449" cy="144" r="1.5" fill="#7c2d12" />
+
+          <!-- Deck Rail & Decorative Odisha Pattachitra Hull Band -->
+          <path d="M112 214 L408 214" stroke="#be123c" stroke-width="12" stroke-linecap="round" />
+          <path d="M116 214 L404 214" stroke="#fde68a" stroke-width="2" stroke-dasharray="8 8" />
+          <path d="M135 236 Q260 250 385 236" fill="none" stroke="#fbbf24" stroke-width="2.5" />
+
+          <!-- Marigold Garland Swags (Gendu Phula Mala) -->
+          <path d="M130 220 Q168 242 205 220 Q242 242 280 220 Q318 242 356 220 Q384 236 402 220"
+                fill="none" stroke="#f97316" stroke-width="4.5" stroke-linecap="round" />
+          <circle cx="168" cy="231" r="4" fill="#fde047" />
+          <circle cx="242" cy="231" r="4" fill="#fde047" />
+          <circle cx="318" cy="231" r="4" fill="#fde047" />
+          <circle cx="384" cy="228" r="4" fill="#fde047" />
+
+          <!-- Traditional Oars (Katua) -->
+          <line x1="158" y1="242" x2="122" y2="292" stroke="#d97706" stroke-width="5" stroke-linecap="round" />
+          <ellipse cx="118" cy="295" rx="9" ry="4" transform="rotate(-48 118 295)" fill="#fbbf24" />
+          <line x1="214" y1="246" x2="184" y2="294" stroke="#d97706" stroke-width="5" stroke-linecap="round" />
+          <ellipse cx="180" cy="297" rx="9" ry="4" transform="rotate(-52 180 297)" fill="#fbbf24" />
+
+          <!-- Glowing Earthen Diyas (Deepa) on the Boat -->
+          <!-- Diya 1 (Stern) -->
+          <path d="M108 198 Q120 208 132 198 Z" fill="#f59e0b" stroke="#fde68a" stroke-width="1.2" />
+          <path class="flame-flicker" d="M120 176 Q127 188 120 196 Q113 188 120 176 Z" fill="#fef08a" />
+          <circle cx="120" cy="186" r="10" fill="#fbbf24" opacity="0.28" />
+
+          <!-- Diya 2 (Center) -->
+          <path d="M248 202 Q262 213 276 202 Z" fill="#f59e0b" stroke="#fde68a" stroke-width="1.2" />
+          <path class="flame-flicker" d="M262 178 Q270 191 262 200 Q254 191 262 178 Z" fill="#fffbeb" />
+          <circle cx="262" cy="189" r="14" fill="#f59e0b" opacity="0.32" />
+
+          <!-- Diya 3 (Prow) -->
+          <path d="M402 188 Q414 198 426 188 Z" fill="#f59e0b" stroke="#fde68a" stroke-width="1.2" />
+          <path class="flame-flicker" d="M414 166 Q421 178 414 186 Q407 178 414 166 Z" fill="#fef08a" />
+          <circle cx="414" cy="176" r="11" fill="#fbbf24" opacity="0.3" />
+
+          <!-- Animated Rippling Waves under the Boita -->
+          <g class="wave-slide">
+            <path d="M35 280 Q85 266 135 280 T235 280 T335 280 T435 280 T495 280" fill="none" stroke="url(#waterGrad)" stroke-width="5" stroke-linecap="round" />
+            <path d="M60 296 Q115 283 170 296 T280 296 T390 296 T475 296" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" opacity="0.55" />
+            <path d="M95 310 Q150 300 205 310 T315 310 T425 310" fill="none" stroke="#fde68a" stroke-width="2" stroke-linecap="round" opacity="0.45" />
+          </g>
+        </svg>
+
+        <div class="boita-banner-label">
+          <span>🪔</span>
+          <span>ବୋଇତ ବନ୍ଦାଣ</span>
+          <span>⛵</span>
+        </div>
+      </div>
+
+      <!-- Interactive Danga Launch Button -->
+      <div class="river-controls">
+        <button id="floatDangaBtn" class="btn btn-danga" type="button">
+          <span>⛵</span>
+          <span>ନଦୀରେ ଡଙ୍ଗା ଭସାନ୍ତୁ</span>
+        </button>
+        <div class="danga-counter-pill">
+          🪔 ଭାସୁଥିବା ଡଙ୍ଗା: <strong id="dangaCount">7</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Name Input + Personalized Greeting + WhatsApp Share -->
+    <section class="card personalize-card">
+      <h2 class="section-heading">✨ ନିଜର କିମ୍ବା ପ୍ରିୟଜନଙ୍କ ନାମରେ ଶୁଭେଚ୍ଛା ବନାନ୍ତୁ ✨</h2>
+      <p class="section-sub">
+        ତଳେ ଥିବା ବକ୍ସରେ କାହାର ବି ନାମ ଲେଖନ୍ତୁ (ଯେପରିକି <strong>Rahul</strong> କିମ୍ବା <strong>ରାହୁଲ</strong>) — ସଙ୍ଗେ ସଙ୍ଗେ ତାଙ୍କ ନାମରେ ଓଡ଼ିଆରେ ଅଭିନନ୍ଦନ ଦେଖାଯିବ ଏବଂ WhatsApp ରେ ସେୟାର କରିପାରିବେ!
+      </p>
+
+      <div class="input-group">
+        <input
+          id="nameInput"
+          class="name-input"
+          type="text"
+          maxlength="40"
+          placeholder="ନାମ ଲେଖନ୍ତୁ (ଉଦାହରଣ: Rahul / ରାହୁଲ)..."
+          aria-label="ପ୍ରିୟଜନଙ୍କ ନାମ ଲେଖନ୍ତୁ"
+        />
+        <button id="applyNameBtn" class="btn btn-apply" type="button">
+          <span>🎉 ଶୁଭେଚ୍ଛା ଦେଖାନ୍ତୁ</span>
+        </button>
+      </div>
+
+      <div class="quick-chips" aria-label="ଶୀଘ୍ର ନାମ ବାଛନ୍ତୁ">
+        <button class="chip" type="button" data-name="Rahul">ରାହୁଲ (Rahul)</button>
+        <button class="chip" type="button" data-name="ମୋ ପରିବାର">ମୋ ପରିବାର</button>
+        <button class="chip" type="button" data-name="ମାଆ ଓ ବାପା">ମାଆ ଓ ବାପା</button>
+        <button class="chip" type="button" data-name="ପ୍ରିୟ ବନ୍ଧୁ">ପ୍ରିୟ ବନ୍ଧୁ</button>
+        <button class="chip" type="button" data-name="">ସମସ୍ତଙ୍କ ପାଇଁ</button>
+      </div>
+
+      <div class="share-actions">
+        <button id="whatsappBtn" class="btn btn-whatsapp" type="button">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.98 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16.01C14.32 16.9 14.74 16.72 15.19 16.68C15.65 16.64 16.66 16.08 16.87 15.49C17.08 14.9 17.08 14.4 17.01 14.29C16.95 14.18 16.78 14.11 16.53 13.99C16.28 13.86 15.06 13.26 14.83 13.18C14.6 13.1 14.43 13.06 14.27 13.31C14.1 13.56 13.62 14.11 13.48 14.28C13.33 14.45 13.19 14.47 12.94 14.34C12.69 14.21 11.88 13.95 10.92 13.09C10.17 12.42 9.67 11.6 9.52 11.35C9.38 11.1 9.5 10.97 9.63 10.84C9.74 10.73 9.88 10.55 10.01 10.41C10.13 10.26 10.17 10.16 10.26 9.99C10.34 9.82 10.3 9.68 10.24 9.55C10.17 9.43 9.68 8.21 9.47 7.71C9.27 7.22 9.06 7.29 8.91 7.28L8.53 7.33Z"/>
+          </svg>
+          <span>WhatsApp ରେ ଶୁଭେଚ୍ଛା ପଠାନ୍ତୁ</span>
+        </button>
+
+        <button id="copyLinkBtn" class="btn btn-copy" type="button">
+          <span>🔗 ଲିଙ୍କ୍ କପି କରନ୍ତୁ</span>
+        </button>
+      </div>
+
+      <div id="sharePreview" class="share-link-preview">
+        🔗 ସେୟାର ଲିଙ୍କ୍: <span id="shareUrlText"></span>
+      </div>
+    </section>
+
+    <!-- Sacred Traditional Verse -->
+    <section class="card mantra-card">
+      <div class="festival-badge">🪔 ପବିତ୍ର ଓଡ଼ିଆ ପରମ୍ପରାର ମନ୍ତ୍ର</div>
+      <div class="mantra-verse">
+        “ଆ କା ମା ବୈ, ପାନ ଗୁଆ ଥୋଇ,<br />
+        ପାନ ଗୁଆ ତୋର, ମାସକ ଧରମ ମୋର।”
+      </div>
+      <p class="mantra-meaning">
+        ଆଷାଢ଼, କାର୍ତ୍ତିକ, ମାଘ ଓ ବୈଶାଖ — ଏହି ଚାରି ପବିତ୍ର ମାସର ପୁଣ୍ୟ ସ୍ମରଣ କରି, ନଦୀ ଜଳରେ ଦୀପ, ଫୁଲ, ପାନ ଓ ଗୁଆ ସଜା ଡଙ୍ଗା ଭସାଇ ଆପଣଙ୍କ ଜୀବନରେ ସୁଖ, ଶାନ୍ତି ଓ ମଙ୍ଗଳର କାମନା କରୁଅଛୁ।
+      </p>
+    </section>
+
+    <!-- Family, Friends & Everyone Odia Congratulations -->
+    <section class="card">
+      <h2 class="section-heading">💐 ପରିବାର ଓ ପ୍ରିୟଜନଙ୍କ ପାଇଁ ହାର୍ଦ୍ଦିକ ଶୁଭେଚ୍ଛା</h2>
+      <p class="section-sub">ନିମ୍ନରୁ ବାଛି ନିଜ ପରିବାର, ଗୁରୁଜନ କିମ୍ବା ବନ୍ଧୁଙ୍କ ପାଇଁ ସ୍ୱତନ୍ତ୍ର ଓଡ଼ିଆ ଅଭିନନ୍ଦନ ପଢ଼ନ୍ତୁ:</p>
+
+      <div class="wish-tabs" role="tablist">
+        <button class="wish-tab active" type="button" data-wish="all">ସମସ୍ତଙ୍କ ପାଇଁ</button>
+        <button class="wish-tab" type="button" data-wish="family">ପରିବାର ପାଇଁ</button>
+        <button class="wish-tab" type="button" data-wish="elders">ଗୁରୁଜନଙ୍କ ପାଇଁ</button>
+        <button class="wish-tab" type="button" data-wish="friends">ବନ୍ଧୁଙ୍କ ପାଇଁ</button>
+      </div>
+
+      <div class="wish-showcase">
+        <div id="wishShowcaseTitle" class="wish-showcase-title">🙏 ସମସ୍ତଙ୍କ ପାଇଁ ମଙ୍ଗଳ କାମନା</div>
+        <p id="wishShowcaseText" class="wish-showcase-text"></p>
+      </div>
+
+      <div class="wishes-grid">
+        <article class="mini-wish-card">
+          <h3>🏡 ପରିବାରର ସୁଖ ଓ ଶାନ୍ତି</h3>
+          <p>
+            ମାଆ ମଙ୍ଗଳା ଓ ଶ୍ରୀଜଗନ୍ନାଥଙ୍କ ଅପାର କୃପାରୁ ଆପଣଙ୍କ ଘର ସବୁବେଳେ ହସଖୁସି, ସ୍ନେହ, ଶ୍ରଦ୍ଧା ଓ ଆନନ୍ଦରେ ପରିପୂର୍ଣ୍ଣ ରହୁ।
+          </p>
+        </article>
+        <article class="mini-wish-card">
+          <h3>🪔 ସ୍ୱାସ୍ଥ୍ୟ ଓ ସମୃଦ୍ଧି</h3>
+          <p>
+            ଭାସୁଥିବା ଡଙ୍ଗାର ଦୀପ ଶିଖା ପରି ଆପଣଙ୍କ ପରିବାରର ସମସ୍ତ ସଦସ୍ୟଙ୍କ ଜୀବନ ଆଲୋକିତ ହେଉ ଓ ଉତ୍ତମ ସ୍ୱାସ୍ଥ୍ୟ ପ୍ରାପ୍ତ ହେଉ।
+          </p>
+        </article>
+        <article class="mini-wish-card">
+          <h3>⛵ ଉତ୍କଳୀୟ ଗୌରବ</h3>
+          <p>
+            ପ୍ରାଚୀନ ସାଧବ ପୁଅଙ୍କ ସାହସ ଓ ଉଦ୍ୟମ ପରି ଆପଣଙ୍କର ପ୍ରତ୍ୟେକ ନୂତନ ପଦକ୍ଷେପ ସଫଳତାର ଶିଖର ଛୁଇଁଯାଉ।
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Rich Odia History of Boita Bandana & Danga Bhasa -->
+    <section class="card">
+      <h2 class="section-heading">📜 ବୋଇତ ବନ୍ଦାଣ ଓ ଡଙ୍ଗା ଭସାର ଗୌରବମୟ ଇତିହାସ</h2>
+      <p class="section-sub">ଆମ ପ୍ରିୟ ଓଡ଼ିଶାର ହଜାର ବର୍ଷର ପ୍ରାଚୀନ ନୌବାଣିଜ୍ୟ ପରମ୍ପରା ଓ ସାଂସ୍କୃତିକ କାହାଣୀ</p>
+
+      <div class="history-grid">
+        <article class="history-item">
+          <div class="history-step">⛵ ୧. ପ୍ରାଚୀନ କଳିଙ୍ଗର ନୌବାଣିଜ୍ୟ</div>
+          <h3>ସାଧବ ପୁଅଙ୍କ ସମୁଦ୍ର ଯାତ୍ରା</h3>
+          <p>
+            ହଜାର ହଜାର ବର୍ଷ ପୂର୍ବେ ପ୍ରାଚୀନ କଳିଙ୍ଗ (ଆଜିର ଓଡ଼ିଶା) ବିଶ୍ୱର ଏକ ସମୃଦ୍ଧ ନୌବାଣିଜ୍ୟ କେନ୍ଦ୍ର ଥିଲା। କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା ଦିନ ଉତ୍ତର-ପୂର୍ବ ମୌସୁମୀ ପବନ ଅନୁକୂଳ ହେଉଥିବାରୁ ସାହସୀ ଓଡ଼ିଆ ନାବିକ ବା "ସାଧବ ପୁଅ" ମାନେ ବିଶାଳ କାଠ ଜାହାଜ ("ବୋଇତ") ରେ ଦୂର ଦେଶକୁ ଯାତ୍ରା କରୁଥିଲେ।
+          </p>
+        </article>
+
+        <article class="history-item">
+          <div class="history-step">🌏 ୨. ସୁବର୍ଣ୍ଣଭୂମି ସହିତ ବାଣିଜ୍ୟ</div>
+          <h3>ବାଲି, ଜାଭା ଓ ସୁମାତ୍ରା ଯାତ୍ରା</h3>
+          <p>
+            କଳିଙ୍ଗର ତାମ୍ରଲିପ୍ତି, ଚେଲିତାଳ, ପାଲୁର ଓ ପିପ୍ପଳୀ ବନ୍ଦରରୁ ବୋଇତ ଗୁଡ଼ିକ ବାଲି (ଆଜିର ଇଣ୍ଡୋନେସିଆରେ "ବାଲି ଯାତ୍ରା" ଭାବେ ପ୍ରସିଦ୍ଧ), ଜାଭା, ସୁମାତ୍ରା, ବୋର୍ଣ୍ଣିଓ ଏବଂ ଶ୍ରୀଲଙ୍କାକୁ ମସଲା, ହସ୍ତତନ୍ତ ବସ୍ତ୍ର, ରତ୍ନ ଓ ହାତୀଦାନ୍ତ ନେଇ ବାଣିଜ୍ୟ କରିବାକୁ ଯାଉଥିଲେ।
+          </p>
+        </article>
+
+        <article class="history-item">
+          <div class="history-step">🪔 ୩. ବୋଇତ ବନ୍ଦାଣ ପରମ୍ପରା</div>
+          <h3>ମାଆ-ଭଉଣୀଙ୍କ ଶୁଭ ବନ୍ଦାପନା</h3>
+          <p>
+            ସମୁଦ୍ର ଯାତ୍ରା ନିରାପଦ ଓ ମଙ୍ଗଳମୟ ହେବା ପାଇଁ ଓଡ଼ିଆ ଘରର ମାଆ, ଭଉଣୀ ଓ ସ୍ତ୍ରୀମାନେ କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା ପ୍ରତ୍ୟୁଷରେ ନଦୀ ଓ ସମୁଦ୍ର କୂଳରେ ଏକତ୍ରିତ ହୋଇ ଦୀପ, ଧୂପ, ଫୁଲ, ଚନ୍ଦନ ଓ ପାନ-ଗୁଆ ଦେଇ ବୋଇତକୁ ବନ୍ଦାପନା କରି ଶୁଭ ବିଦାୟ ଦେଉଥିଲେ — ଏହାକୁ "ବୋଇତ ବନ୍ଦାଣ" କୁହାଯାଏ।
+          </p>
+        </article>
+
+        <article class="history-item">
+          <div class="history-step">🪷 ୪. କଦଳୀ ପଟୁଆର ଡଙ୍ଗା ଭସା</div>
+          <h3>ଆଜିର ପବିତ୍ର ଉତ୍ସବ</h3>
+          <p>
+            ସେହି ଗୌରବମୟ ଅତୀତକୁ ମନେ ରଖିବା ପାଇଁ ଆଜି ବି ଓଡ଼ିଶାର ଘରେ ଘରେ କଦଳୀ ପଟୁଆ, ସୋଲ କିମ୍ବା ରଙ୍ଗୀନ କାଗଜରେ ଡଙ୍ଗା ତିଆରି କରି ସେଥିରେ ଦୀପ, ଫୁଲ, ପାନ ଓ ଗୁଆ ରଖି "ଆ କା ମା ବୈ" ଗାଇ ମହାନଦୀ, ପୋଖରୀ ଓ ସମୁଦ୍ରରେ ଭସାଯାଏ।
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>🌺 ଜୟ ଜଗନ୍ନାଥ • ବନ୍ଦେ ଉତ୍କଳ ଜନନୀ 🌺</p>
+      <p>Made with ❤️ by <strong>Anubrata</strong> | ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣ ବିଶେଷ ଅଭିନନ୍ଦନ ପୃଷ୍ଠା</p>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      const DEFAULT_WEB_BASE = "https://ais-pre-ueuynacyvdn3t5b3swkwvd-100214857189.asia-east1.run.app/";
+
+      // Elements
+      const nameInput = document.getElementById("nameInput");
+      const applyNameBtn = document.getElementById("applyNameBtn");
+      const heroTitle = document.getElementById("heroTitle");
+      const heroSubtitle = document.getElementById("heroSubtitle");
+      const whatsappBtn = document.getElementById("whatsappBtn");
+      const copyLinkBtn = document.getElementById("copyLinkBtn");
+      const shareUrlText = document.getElementById("shareUrlText");
+      const floatDangaBtn = document.getElementById("floatDangaBtn");
+      const dangaCountEl = document.getElementById("dangaCount");
+      const wishShowcaseTitle = document.getElementById("wishShowcaseTitle");
+      const wishShowcaseText = document.getElementById("wishShowcaseText");
+      const toastEl = document.getElementById("toast");
+
+      let currentName = "";
+      let activeWishTab = "all";
+      let launchedCount = 7;
+
+      const wishMessages = {
+        all: {
+          title: "🙏 ସମସ୍ତଙ୍କ ପାଇଁ ହାର୍ଦ୍ଦିକ ଶୁଭେଚ୍ଛା",
+          getText: (who) =>
+            `${who}ଆପଣଙ୍କୁ, ଆପଣଙ୍କ ପିତାମାତା, ଭାଇଭଉଣୀ, ବନ୍ଧୁବାନ୍ଧବ ଏବଂ ସମଗ୍ର ପରିବାରକୁ ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣର ଅନେକ ଅନେକ ଅଭିନନ୍ଦନ। ନଦୀରେ ଭାସୁଥିବା ଡଙ୍ଗାର ଦୀପ ପରି ଆପଣଙ୍କ ଜୀବନ ସଦା ଉଜ୍ଜ୍ୱଳ ଓ ଆନନ୍ଦମୟ ହେଉ!`
+        },
+        family: {
+          title: "🏡 ମୋର ପ୍ରିୟ ପରିବାର ପାଇଁ ଅଭିନନ୍ଦନ",
+          getText: (who) =>
+            `${who}ଆମ ପରିବାରର ସମସ୍ତ ସଦସ୍ୟଙ୍କୁ ବୋଇତ ବନ୍ଦାଣର ହାର୍ଦ୍ଦିକ ଶୁଭକାମନା। ମହାପ୍ରଭୁ ଶ୍ରୀଜଗନ୍ନାଥଙ୍କ ଆଶୀର୍ବାଦରୁ ଆମ ଘରେ ସଦା ଏକତା, ସ୍ନେହ, ଉତ୍ତମ ସ୍ୱାସ୍ଥ୍ୟ ଓ ସୁଖ-ସମୃଦ୍ଧିର ଜୁଆର ଆସିଥାଉ।`
+        },
+        elders: {
+          title: "🙇‍♂️ ଗୁରୁଜନଙ୍କ ଚରଣରେ ପ୍ରଣାମ ଓ ଶୁଭେଚ୍ଛା",
+          getText: (who) =>
+            `${who}ପରିବାରର ସମସ୍ତ ପୂଜ୍ୟ ଗୁରୁଜନ, ଜେଜେବାପା-ଜେଜେମାଆ ଏବଂ ପିତାମାତାଙ୍କୁ ଡଙ୍ଗା ଭସାର ଶ୍ରଦ୍ଧାପୂର୍ଣ୍ଣ ପ୍ରଣାମ ଓ ଶୁଭେଚ୍ଛା। ଆପଣମାନଙ୍କ ଆଶୀର୍ବାଦ ଓ ସ୍ନେହ ଆମ ଜୀବନର ସବୁଠାରୁ ବଡ଼ ସମ୍ପଦ।`
+        },
+        friends: {
+          title: "🤝 ପ୍ରିୟ ବନ୍ଧୁମାନଙ୍କ ପାଇଁ ଶୁଭକାମନା",
+          getText: (who) =>
+            `${who}ମୋର ସମସ୍ତ ପ୍ରିୟ ବନ୍ଧୁଙ୍କୁ ପବିତ୍ର ଡଙ୍ଗା ଭସା ଓ ବାଲିଯାତ୍ରା ପର୍ବର ହାର୍ଦ୍ଦିକ ଶୁଭେଚ୍ଛା! ସାଧବ ପୁଅଙ୍କ ସାହସ ପରି ତୁମର ସମସ୍ତ ସ୍ୱପ୍ନ ପୂରଣ ହେଉ ଏବଂ ଜୀବନ ସଫଳତାରେ ଭରିଯାଉ।`
+        }
+      };
+
+      function showToast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add("show");
+        clearTimeout(showToast._timer);
+        showToast._timer = setTimeout(() => {
+          toastEl.classList.remove("show");
+        }, 2800);
+      }
+
+      function escapeHtml(str) {
+        return str
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function getBaseShareUrl() {
+        try {
+          if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+            return window.location.origin + window.location.pathname;
+          }
+        } catch (e) {}
+        return DEFAULT_WEB_BASE;
+      }
+
+      function buildShareUrl(name) {
+        const base = getBaseShareUrl();
+        const trimmed = (name || "").trim();
+        if (!trimmed) return base;
+        return `${base}?name=${encodeURIComponent(trimmed)}`;
+      }
+
+      function renderWishTab() {
+        const cfg = wishMessages[activeWishTab] || wishMessages.all;
+        wishShowcaseTitle.textContent = cfg.title;
+        const prefix = currentName ? `ପ୍ରିୟ ${currentName}, ` : "";
+        wishShowcaseText.textContent = cfg.getText(prefix);
+      }
+
+      function updateGreeting(name, animate = false) {
+        currentName = (name || "").trim();
+        const safeName = escapeHtml(currentName);
+
+        if (currentName) {
+          heroTitle.innerHTML = `🎉 ହାର୍ଦ୍ଦିକ ଅଭିନନ୍ଦନ, <span class="name-highlight">${safeName}</span>! 🎉`;
+          heroSubtitle.innerHTML = `ପ୍ରିୟ <strong>${safeName}</strong>, ଆପଣଙ୍କୁ ଏବଂ ଆପଣଙ୍କ ସମଗ୍ର ପରିବାରକୁ ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣର ଅଶେଷ ଶୁଭେଚ୍ଛା ଓ ଅଭିନନ୍ଦନ!`;
+          document.title = `${currentName} - ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣ ଶୁଭେଚ୍ଛା`;
+        } else {
+          heroTitle.textContent = "ଶୁଭ ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣ!";
+          heroSubtitle.textContent =
+            "ଆପଣଙ୍କୁ ଏବଂ ଆପଣଙ୍କ ସମଗ୍ର ପରିବାରକୁ ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣର ହାର୍ଦ୍ଦିକ ଅଭିନନ୍ଦନ ଓ ଅଶେଷ ଶୁଭେଚ୍ଛା!";
+          document.title = "ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣ — ହାର୍ଦ୍ଦିକ ଶୁଭେଚ୍ଛା | Made by Anubrata";
+        }
+
+        if (animate) {
+          heroTitle.classList.remove("pop");
+          void heroTitle.offsetWidth;
+          heroTitle.classList.add("pop");
+        }
+
+        const shareUrl = buildShareUrl(currentName);
+        shareUrlText.textContent = shareUrl;
+        renderWishTab();
+
+        // Sync URL query param smoothly without reload
+        try {
+          if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+            const urlObj = new URL(window.location.href);
+            if (currentName) {
+              urlObj.searchParams.set("name", currentName);
+            } else {
+              urlObj.searchParams.delete("name");
+            }
+            window.history.replaceState({}, "", urlObj.toString());
+          }
+        } catch (e) {}
+      }
+
+      // Read ?name= from URL on startup
+      function readInitialNameFromUrl() {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          let n = params.get("name");
+          if (!n && window.location.hash && window.location.hash.includes("name=")) {
+            const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+            n = hashParams.get("name");
+          }
+          if (n) {
+            nameInput.value = n;
+            updateGreeting(n, true);
+            return;
+          }
+        } catch (e) {}
+        updateGreeting("", false);
+      }
+
+      // Event listeners for name input
+      nameInput.addEventListener("input", () => {
+        updateGreeting(nameInput.value, false);
+      });
+
+      nameInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          updateGreeting(nameInput.value, true);
+          spawnDanga(canvas.width * 0.5, canvas.height * 0.65, true);
+          showToast(currentName ? `✨ ${currentName} ଙ୍କ ନାମରେ ଶୁଭେଚ୍ଛା ପ୍ରସ୍ତୁତ!` : "✨ ସମସ୍ତଙ୍କ ପାଇଁ ଶୁଭେଚ୍ଛା ପ୍ରସ୍ତୁତ!");
+        }
+      });
+
+      applyNameBtn.addEventListener("click", () => {
+        updateGreeting(nameInput.value, true);
+        spawnDanga(canvas.width * 0.5, canvas.height * 0.62, true);
+        showToast(currentName ? `🎉 ${currentName} ଙ୍କୁ ହାର୍ଦ୍ଦିକ ଅଭିନନ୍ଦନ!` : "🪷 ଶୁଭ ଡଙ୍ଗା ଭସା!");
+      });
+
+      document.querySelectorAll(".chip").forEach((chip) => {
+        chip.addEventListener("click", () => {
+          const val = chip.getAttribute("data-name") || "";
+          nameInput.value = val;
+          updateGreeting(val, true);
+          spawnDanga(canvas.width * 0.45, canvas.height * 0.68, true);
+        });
+      });
+
+      // Wish tabs
+      document.querySelectorAll(".wish-tab").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".wish-tab").forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+          activeWishTab = tab.getAttribute("data-wish") || "all";
+          renderWishTab();
+        });
+      });
+
+      // WhatsApp Share Logic
+      whatsappBtn.addEventListener("click", () => {
+        const nameToShare = (nameInput.value || currentName).trim();
+        const shareUrl = buildShareUrl(nameToShare);
+        const greetingLine = nameToShare
+          ? `ପ୍ରିୟ *${nameToShare}*,\nଆପଣଙ୍କୁ ଏବଂ ଆପଣଙ୍କ ସମଗ୍ର ପରିବାରକୁ ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣର ହାର୍ଦ୍ଦିକ ଅଭିନନ୍ଦନ ଓ ଅଶେଷ ଶୁଭେଚ୍ଛା!`
+          : `ଆପଣଙ୍କୁ ଏବଂ ଆପଣଙ୍କ ସମଗ୍ର ପରିବାରକୁ ପବିତ୍ର କାର୍ତ୍ତିକ ପୂର୍ଣ୍ଣିମା, ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣର ହାର୍ଦ୍ଦିକ ଅଭିନନ୍ଦନ ଓ ଅଶେଷ ଶୁଭେଚ୍ଛା!`;
+
+        const message =
+          `🪷 *ଶୁଭ ଡଙ୍ଗା ଭସା ଓ ବୋଇତ ବନ୍ଦାଣ!* ⛵🪔\n\n` +
+          `${greetingLine}\n\n` +
+          `✨ ନିଜ ନାମରେ ସ୍ୱତନ୍ତ୍ର ଶୁଭେଚ୍ଛା ଦେଖିବା ପାଇଁ ନିମ୍ନ ଲିଙ୍କରେ କ୍ଲିକ୍ କରନ୍ତୁ 👇\n` +
+          `${shareUrl}\n\n` +
+          `_Made by Anubrata_`;
+
+        if (window.AndroidBridge && typeof window.AndroidBridge.shareWhatsApp === "function") {
+          window.AndroidBridge.shareWhatsApp(message, shareUrl);
+          return;
+        }
+
+        const waUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+        window.open(waUrl, "_blank", "noopener,noreferrer");
+      });
+
+      // Copy Link Logic
+      copyLinkBtn.addEventListener("click", async () => {
+        const shareUrl = buildShareUrl(nameInput.value || currentName);
+        if (window.AndroidBridge && typeof window.AndroidBridge.copyLink === "function") {
+          window.AndroidBridge.copyLink(shareUrl);
+          showToast("✅ ଶୁଭେଚ୍ଛା ଲିଙ୍କ୍ କପି ହୋଇଗଲା!");
+          return;
+        }
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(shareUrl);
+            showToast("✅ ଶୁଭେଚ୍ଛା ଲିଙ୍କ୍ କପି ହୋଇଗଲା!");
+          } else {
+            throw new Error("no clipboard");
+          }
+        } catch (err) {
+          const temp = document.createElement("input");
+          temp.value = shareUrl;
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand("copy");
+          document.body.removeChild(temp);
+          showToast("✅ ଶୁଭେଚ୍ଛା ଲିଙ୍କ୍ କପି ହୋଇଗଲା!");
+        }
+      });
+
+      /* ===========================================================
+         ANIMATED SACRED RIVER, MOONLIGHT, STARS & FLOATING DANGA CANVAS
+         =========================================================== */
+      const canvas = document.getElementById("riverCanvas");
+      const ctx = canvas.getContext("2d");
+
+      let stars = [];
+      let dangas = [];
+      let petals = [];
+      let ripples = [];
+      let sparks = [];
+      let time = 0;
+
+      function resizeCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(window.innerWidth * dpr);
+        canvas.height = Math.floor(window.innerHeight * dpr);
+        canvas.style.width = window.innerWidth + "px";
+        canvas.style.height = window.innerHeight + "px";
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        initStars();
+      }
+
+      function initStars() {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        stars = [];
+        const count = Math.min(95, Math.floor((w * h) / 11000));
+        for (let i = 0; i < count; i++) {
+          stars.push({
+            x: Math.random() * w,
+            y: Math.random() * (h * 0.45),
+            r: 0.6 + Math.random() * 1.7,
+            phase: Math.random() * Math.PI * 2,
+            speed: 0.015 + Math.random() * 0.03
+          });
+        }
+      }
+
+      function createDanga(x, y, scale) {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const riverTop = h * 0.48;
+        const assignedY = y !== undefined ? Math.max(riverTop + 20, Math.min(h - 30, y)) : riverTop + 30 + Math.random() * (h * 0.44);
+        const depth = (assignedY - riverTop) / Math.max(1, h - riverTop);
+        const s = scale || 0.55 + depth * 0.72;
+        return {
+          x: x !== undefined ? x : Math.random() * w,
+          y: assignedY,
+          scale: s,
+          vx: (0.28 + Math.random() * 0.45) * s,
+          bobPhase: Math.random() * Math.PI * 2,
+          flickerPhase: Math.random() * Math.PI * 2,
+          hullColor: Math.random() > 0.45 ? "#9a3412" : "#be123c",
+          sailColor: Math.random() > 0.5 ? "#fbbf24" : "#fffbeb"
+        };
+      }
+
+      function initSceneEntities() {
+        dangas = [];
+        for (let i = 0; i < 7; i++) {
+          dangas.push(createDanga(Math.random() * window.innerWidth));
+        }
+        petals = [];
+        for (let i = 0; i < 24; i++) {
+          petals.push({
+            x: Math.random() * window.innerWidth,
+            y: window.innerHeight * 0.48 + Math.random() * window.innerHeight * 0.5,
+            vx: 0.25 + Math.random() * 0.45,
+            vy: (Math.random() - 0.5) * 0.12,
+            size: 2.5 + Math.random() * 3.5,
+            color: Math.random() > 0.4 ? "#fb923c" : "#f43f5e",
+            rot: Math.random() * Math.PI * 2
+          });
+        }
+      }
+
+      function spawnDanga(px, py, boost) {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const riverTop = h * 0.48;
+        const y = Math.max(riverTop + 25, Math.min(h - 34, py || riverTop + 80));
+        const x = px || w * 0.25;
+        const newBoat = createDanga(x, y);
+        dangas.push(newBoat);
+        if (dangas.length > 22) {
+          dangas.shift();
+        }
+        ripples.push({ x, y: y + 8, r: 6, alpha: 0.85 });
+        if (boost) {
+          for (let i = 0; i < 16; i++) {
+            const angle = Math.random() * Math.PI * 2;
+            const spd = 0.9 + Math.random() * 2.4;
+            sparks.push({
+              x,
+              y: y - 10,
+              vx: Math.cos(angle) * spd,
+              vy: Math.sin(angle) * spd - 0.9,
+              life: 1,
+              color: Math.random() > 0.4 ? "#fde047" : "#fb7185"
+            });
+          }
+        }
+        launchedCount += 1;
+        dangaCountEl.textContent = launchedCount;
+      }
+
+      floatDangaBtn.addEventListener("click", () => {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        spawnDanga(w * (0.2 + Math.random() * 0.5), h * (0.56 + Math.random() * 0.28), true);
+        showToast("🪷 ଆପଣଙ୍କ ଶୁଭ ଡଙ୍ଗା ନଦୀରେ ଭାସିଗଲା!");
+      });
+
+      canvas.addEventListener("click", (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        if (y > window.innerHeight * 0.45) {
+          spawnDanga(x, y, true);
+        } else {
+          ripples.push({ x, y: window.innerHeight * 0.56, r: 6, alpha: 0.7 });
+        }
+      });
+
+      function drawDanga(d) {
+        const bob = Math.sin(time * 0.04 + d.bobPhase) * 3.2;
+        const tilt = Math.sin(time * 0.03 + d.bobPhase) * 0.045;
+        ctx.save();
+        ctx.translate(d.x, d.y + bob);
+        ctx.scale(d.scale, d.scale);
+        ctx.rotate(tilt);
+
+        // Water reflection glow beneath boat
+        const glowGrad = ctx.createRadialGradient(0, 12, 2, 0, 12, 34);
+        glowGrad.addColorStop(0, "rgba(255, 195, 70, 0.42)");
+        glowGrad.addColorStop(1, "rgba(255, 195, 70, 0)");
+        ctx.fillStyle = glowGrad;
+        ctx.beginPath();
+        ctx.ellipse(0, 12, 34, 10, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Banana-stem Danga Hull
+        ctx.beginPath();
+        ctx.moveTo(-28, 0);
+        ctx.quadraticCurveTo(-18, 13, 0, 13);
+        ctx.quadraticCurveTo(18, 13, 28, 0);
+        ctx.quadraticCurveTo(16, 4, 0, 4);
+        ctx.quadraticCurveTo(-16, 4, -28, 0);
+        ctx.closePath();
+        ctx.fillStyle = d.hullColor;
+        ctx.fill();
+        ctx.lineWidth = 1.4;
+        ctx.strokeStyle = "#fde68a";
+        ctx.stroke();
+
+        // Small sail / flower arch
+        ctx.beginPath();
+        ctx.moveTo(0, 4);
+        ctx.lineTo(0, -18);
+        ctx.strokeStyle = "#fde68a";
+        ctx.lineWidth = 1.4;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0, -17);
+        ctx.quadraticCurveTo(12, -10, 10, 1);
+        ctx.lineTo(0, 1);
+        ctx.closePath();
+        ctx.fillStyle = d.sailColor;
+        ctx.globalAlpha = 0.88;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+
+        // Diya Lamp & Flickering Flame
+        ctx.fillStyle = "#f59e0b";
+        ctx.beginPath();
+        ctx.arc(-6, 2, 4.5, 0, Math.PI);
+        ctx.fill();
+
+        const flick = 1 + Math.sin(time * 0.2 + d.flickerPhase) * 0.18;
+        ctx.save();
+        ctx.translate(-6, 1);
+        ctx.scale(1, flick);
+        const flameGlow = ctx.createRadialGradient(0, -6, 1, 0, -6, 13);
+        flameGlow.addColorStop(0, "rgba(255, 248, 200, 0.95)");
+        flameGlow.addColorStop(0.5, "rgba(255, 180, 40, 0.45)");
+        flameGlow.addColorStop(1, "rgba(255, 140, 0, 0)");
+        ctx.fillStyle = flameGlow;
+        ctx.beginPath();
+        ctx.arc(0, -6, 13, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "#fffbeb";
+        ctx.beginPath();
+        ctx.moveTo(0, -11);
+        ctx.quadraticCurveTo(3.5, -5, 0, 0);
+        ctx.quadraticCurveTo(-3.5, -5, 0, -11);
+        ctx.fill();
+        ctx.restore();
+
+        ctx.restore();
+      }
+
+      function animate() {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+        const horizonY = h * 0.47;
+        time += 1;
+
+        // Sky & Horizon Gradient
+        const skyGrad = ctx.createLinearGradient(0, 0, 0, horizonY);
+        skyGrad.addColorStop(0, "#040b1d");
+        skyGrad.addColorStop(0.45, "#0d1f47");
+        skyGrad.addColorStop(0.8, "#311b48");
+        skyGrad.addColorStop(1, "#9a3412");
+        ctx.fillStyle = skyGrad;
+        ctx.fillRect(0, 0, w, horizonY + 2);
+
+        // Twinkling Stars
+        for (const s of stars) {
+          const alpha = 0.35 + 0.65 * Math.abs(Math.sin(time * s.speed + s.phase));
+          ctx.fillStyle = `rgba(255, 248, 220, ${alpha})`;
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Kartik Purnima Full Moon
+        const moonX = w * 0.82;
+        const moonY = h * 0.16;
+        const moonHalo = ctx.createRadialGradient(moonX, moonY, 12, moonX, moonY, 105);
+        moonHalo.addColorStop(0, "rgba(255, 249, 219, 0.95)");
+        moonHalo.addColorStop(0.25, "rgba(255, 214, 110, 0.38)");
+        moonHalo.addColorStop(1, "rgba(255, 214, 110, 0)");
+        ctx.fillStyle = moonHalo;
+        ctx.beginPath();
+        ctx.arc(moonX, moonY, 105, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = "#fffbeb";
+        ctx.beginPath();
+        ctx.arc(moonX, moonY, 26, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Distant Temple Silhouette on Horizon
+        ctx.fillStyle = "rgba(10, 15, 36, 0.72)";
+        ctx.beginPath();
+        ctx.moveTo(0, horizonY);
+        ctx.lineTo(w * 0.08, horizonY - 14);
+        ctx.lineTo(w * 0.12, horizonY - 46);
+        ctx.lineTo(w * 0.16, horizonY - 14);
+        ctx.lineTo(w * 0.35, horizonY - 6);
+        ctx.quadraticCurveTo(w * 0.55, horizonY - 18, w * 0.75, horizonY - 4);
+        ctx.lineTo(w, horizonY);
+        ctx.closePath();
+        ctx.fill();
+
+        // River Water Gradient
+        const riverGrad = ctx.createLinearGradient(0, horizonY, 0, h);
+        riverGrad.addColorStop(0, "#4c223e");
+        riverGrad.addColorStop(0.2, "#142c54");
+        riverGrad.addColorStop(0.65, "#091c3a");
+        riverGrad.addColorStop(1, "#040d21");
+        ctx.fillStyle = riverGrad;
+        ctx.fillRect(0, horizonY, w, h - horizonY);
+
+        // Shimmering Moon Reflection Path on River
+        for (let i = 0; i < 18; i++) {
+          const ry = horizonY + 10 + i * ((h - horizonY) / 18);
+          const rw = 26 + i * 3.5 + Math.sin(time * 0.05 + i) * 10;
+          const rx = moonX + Math.sin(time * 0.03 + i * 0.7) * 8;
+          ctx.fillStyle = `rgba(255, 218, 120, ${0.22 - i * 0.009})`;
+          ctx.beginPath();
+          ctx.ellipse(rx, ry, rw, 2.5, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Animated Flowing Wave Ribbons
+        for (let layer = 0; layer < 5; layer++) {
+          const baseY = horizonY + 28 + layer * ((h - horizonY - 30) / 5);
+          ctx.beginPath();
+          for (let x = 0; x <= w; x += 18) {
+            const wy = baseY + Math.sin(x * 0.015 + time * (0.025 + layer * 0.004) + layer) * (4 + layer * 1.4);
+            if (x === 0) ctx.moveTo(x, wy);
+            else ctx.lineTo(x, wy);
+          }
+          ctx.strokeStyle = layer % 2 === 0 ? "rgba(125, 211, 252, 0.14)" : "rgba(253, 224, 71, 0.1)";
+          ctx.lineWidth = 1.6;
+          ctx.stroke();
+        }
+
+        // Expanding Water Ripples
+        for (let i = ripples.length - 1; i >= 0; i--) {
+          const rp = ripples[i];
+          rp.r += 1.4;
+          rp.alpha -= 0.014;
+          if (rp.alpha <= 0) {
+            ripples.splice(i, 1);
+            continue;
+          }
+          ctx.strokeStyle = `rgba(253, 224, 71, ${rp.alpha})`;
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.ellipse(rp.x, rp.y, rp.r * 1.9, rp.r * 0.55, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+
+        // Drifting Marigold Petals
+        for (const p of petals) {
+          p.x += p.vx;
+          p.y += Math.sin(time * 0.03 + p.x * 0.02) * 0.18;
+          p.rot += 0.02;
+          if (p.x > w + 15) p.x = -15;
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rot);
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = 0.72;
+          ctx.beginPath();
+          ctx.ellipse(0, 0, p.size, p.size * 0.55, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+
+        // Sort Dangas by Y for natural depth perspective
+        dangas.sort((a, b) => a.y - b.y);
+        for (const d of dangas) {
+          d.x += d.vx;
+          if (d.x > w + 60) {
+            d.x = -60;
+          }
+          drawDanga(d);
+        }
+
+        // Celebratory Diya Sparks
+        for (let i = sparks.length - 1; i >= 0; i--) {
+          const sp = sparks[i];
+          sp.x += sp.vx;
+          sp.y += sp.vy;
+          sp.vy += 0.04;
+          sp.life -= 0.024;
+          if (sp.life <= 0) {
+            sparks.splice(i, 1);
+            continue;
+          }
+          ctx.fillStyle = sp.color;
+          ctx.globalAlpha = sp.life;
+          ctx.beginPath();
+          ctx.arc(sp.x, sp.y, 2.4, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.globalAlpha = 1;
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      window.addEventListener("resize", resizeCanvas);
+      resizeCanvas();
+      initSceneEntities();
+      readInitialNameFromUrl();
+      animate();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Danga Bhasa",
+  "description": "Odia Danga Bhasa & Boita Bandana festival congratulations web app made by Anubrata.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
